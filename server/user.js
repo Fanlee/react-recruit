@@ -9,6 +9,21 @@ Router.get('/list', (req, res) => {
   })
 })
 
+Router.post('/register', (req, res) => {
+  const { user, pwd, type } = req.body
+  User.findOne({ user }, (err, doc) => {
+    if (doc) {
+      return res.json({ code: 1, msg: '用户名重复' })
+    }
+    User.create({ user, pwd, type }, (e, d) => {
+      if (e) {
+        return res.json({ code: 1, msg: '后端出错了' })
+      }
+      return res.json({ code: 0 })
+    })
+  })
+})
+
 Router.get('/info', (req, res) => {
   return res.json({ code: 1 })
 })
