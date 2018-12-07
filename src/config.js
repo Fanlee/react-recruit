@@ -1,8 +1,8 @@
 import axios from 'axios'
-import {Toast} from 'antd-mobile'
+import { Toast } from 'antd-mobile'
 
 axios.interceptors.request.use(config => {
-  Toast('正在加载', 0)
+  Toast.loading('正在加载', 0)
   return config
 })
 
