@@ -28,6 +28,7 @@ class AuthRoute extends React.Component{
 					}
 				}
 			})
+			
 		// 是否登录
 		// 现在的url地址  login是不需要跳转的
 
