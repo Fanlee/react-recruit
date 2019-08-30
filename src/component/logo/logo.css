@@ -1,15 +1,5 @@
-.logo-container {
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 20px 0;
-}
-
-.logo-container span {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
-  background: skyblue;
-  color: #fff;
+.logo-container{
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 20px;
 }
